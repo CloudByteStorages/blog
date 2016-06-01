@@ -1,0 +1,20 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+
+title: CloudByte Blog
+description: # Write a description here
+author:
+  name: CloudByte Blog
+  email: engage@cloudbyte.com
+  github: CloudbyteStorages
+  bio: A solution box to all issues you face in OpenStack, ElastiStor, etc. 
+
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH: http://cloudbytestorages.github.io/blog
