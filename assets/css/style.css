@@ -142,6 +142,11 @@ article.home h4 a:hover {
 	color: #0B498C;
 }
 
+.author .author-image {
+  float: left;
+  margin-right: 20px;
+}
+
 footer {
 	padding-top: 15px;
 	font-family: 'Ubuntu';
