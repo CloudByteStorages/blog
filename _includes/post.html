@@ -93,13 +93,15 @@
         </a>
       </section>
       
-      <section class="col-sm-6 author">
-        <img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}" class="img-rounded author-image" />
-        <a href="https://www.linkedin.com/in/{{page.contributor_linkedin}}"><h4 class="section-title">{{page.contributor_name}}</h4></a>
-        <a class="btn btn-default btn-sm" href="mailto:{{page.contributor_emailid}}">
-	  <i class="fa fa-envelope fa-lg"></i>
-	</a>
-      </section>
+      {% unless page.contributor_name != empty %}
+	<section class="col-sm-6 author">
+         <img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}" class="img-rounded author-image" />
+         <a href="https://www.linkedin.com/in/{{page.contributor_linkedin}}"><h4 class="section-title">{{page.contributor_name}}</h4></a>
+         <a class="btn btn-default btn-sm" href="mailto:{{page.contributor_emailid}}">
+	   <i class="fa fa-envelope fa-lg"></i>
+	 </a>
+        </section>
+      {% endunless %}
 
     </div>
 
