@@ -6,7 +6,7 @@ categories:           [general, setup, authentication]
 tags:                 [authentication, setup]
 date:                 2016-05-24 15:13:00 (UTC +5:30)
 contributor_name:     Abhishek Shrivastava
-contributor_image:    "/abhishek.jpg"
+contributor_image:    "abhishek.jpg"
 contributor_linkedin: abhishek-shrivastava-03921390
 contributor_emailid:  abhishek@cloudbyte.com
 ---
