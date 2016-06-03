@@ -95,8 +95,9 @@
 
       </div>
 
+      {% unless page.contributor_name == empty %}
       <div>
-        {% unless page.contributor_name == empty %}
+        
         <section class="col-sm-6 author">
           <img src="https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/contributor_images/{{page.contributor_image}}" class="img-rounded author-image" />
           <a href="https://www.linkedin.com/in/{{page.contributor_linkedin}}"><h4 class="section-title">{{page.contributor_name}}</h4></a>
@@ -104,9 +105,10 @@
             <i class="fa fa-envelope fa-lg"></i>
           </a>
         </section>
-        {% endunless %}
-      </div>
 
+      </div>
+      {% endunless %}
+      
       <div class="clearfix"></div>
 
       <ul class="pager">
