@@ -13,7 +13,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ## Observation :
 
-  ##### Cinder Volume logs :.
+##### Cinder Volume logs :.
   
   ```
   2015-04-28 12:47:47.672 690 ERROR cinder.volume.manager [req-7ad310ec-8ae1-48d4-8c2b-0ae174695b6c 3f3ecfa581fd42b397b06fe9f9aa2578 bd5fdc9a39fd4586bf2ed6182a4c7585 - - -] Unable to fetch connection information from backend: Command requested root, but did not specify a root helper.
