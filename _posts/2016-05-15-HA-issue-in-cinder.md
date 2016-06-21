@@ -15,11 +15,11 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Check for host property in /etc/cinder/cinder.conf
 
-![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/post_images/cinder_ha1.jpg)
+![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/cinder_ha1.jpg)
 
 - Check the host column in volumes table in cinder database
 
-![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/post_images/cinder_ha2.jpg)
+![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/cinder_ha2.jpg)
 
 ## Solution :
 
