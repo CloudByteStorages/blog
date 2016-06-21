@@ -12,7 +12,7 @@ author:
   name: CloudByte Blog
   email: engage@cloudbyte.com
   github: CloudbyteStorages
-  bio: A solution box to all issues you face in OpenStack, ElastiStor, etc. 
+  bio: "A solution box to all issues you face in OpenStack, ElastiStor, etc."
 
 categories_path: categories.html
 tags_path: tags.html
