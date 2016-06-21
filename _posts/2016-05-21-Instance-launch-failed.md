@@ -31,6 +31,8 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ### Nova-Scheduler logs:
 
+- Info gathered from nova logs.
+
   ```
   2015-03-20 13:28:22.587 DEBUG nova.filters [req-6e082969-fa5e-40da-81ea-1dbb4c7b6130 admin admin] Starting with 1 host(s) get_filtered_objects /opt/stack/nova/nova/filters.py:70
 
