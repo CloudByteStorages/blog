@@ -17,7 +17,6 @@ contributor_emailid:  abhishek@cloudbyte.com
 
   ```
   nova-manage floating create --pool POOL_NAME --ip_range
-
   ```
 
 - Now go to openstack horizon and do the following:

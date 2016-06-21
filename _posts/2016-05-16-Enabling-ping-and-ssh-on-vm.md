@@ -24,7 +24,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   ```
   $ nova secgroup-add-rule default icmp -1 -1 0.0.0.0/0
   $ nova secgroup-add-rule default tcp 22 22 0.0.0.0/0           
-
   ```
 
 - Enable ping and SSH with euca2ools:
@@ -32,7 +31,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   ```
   $ euca-authorize -P icmp -t -1:-1 -s 0.0.0.0/0 default
   $ euca-authorize -P tcp -p 22 -s 0.0.0.0/0 default         
-
   ```
 
 - If you have run these commands and still cannot ping or SSH your instances, check the number of running dnsmasq processes, there should be two. 
@@ -41,7 +39,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   ```
   # killall dnsmasq
   # service nova-network restart
-
   ```
 
 - Enable RDP for the above things to work:
@@ -49,8 +46,8 @@ contributor_emailid:  abhishek@cloudbyte.com
   - Go to Access & Security and select  Security Groups
   - In the Security Groups section select default group’s Manage Rules
 
-	![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/ping_and_ssh1.jpg)
+	  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/ping_and_ssh1.jpg)
 
   - In Manage rules add a new rule as follows and save it
 
-	![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/ping_and_ssh2.jpg)
+	  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/ping_and_ssh2.jpg)

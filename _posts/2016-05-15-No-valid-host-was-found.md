@@ -17,7 +17,6 @@ contributor_emailid:  abhishek@cloudbyte.com
 
   ```
   hw_qemu_guest_agent = yes
-
   ```
 
 - @ nova compute logs
@@ -96,7 +95,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   937531 qemu-system-x86_64: -chardev socket,id=charchannel0,path=/var/lib/libvirt/qemu/org.qemu.guest_agent.0.instance-00000016.sock,server,nowait: chardev: opening backend "socket" failed
 
   937532  _do_build_and_run_instance /opt/stack/nova/nova/compute/manager.py:2035
-
   ```
 
 - This may not be related but still as this is a devstack & a permission issue, lets check the sudoers file.
@@ -144,7 +142,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   devsosci ALL=(ALL) NOPASSWD: ALL
 
   stack ALL=(ALL) NOPASSWD: ALL
-
   ```
 
 
@@ -157,7 +154,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   $ sudo service libvirt-bin restart
   $ sudo service nova-compute restart
   $ sudo service apparmor reload
-
   ```
 
 - After performing these steps instance has to be created.
