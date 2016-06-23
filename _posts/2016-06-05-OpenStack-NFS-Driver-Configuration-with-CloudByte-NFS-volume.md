@@ -32,11 +32,10 @@ contributor_emailid:  abhishek@cloudbyte.com
 ### Options supported by OpenStack NFS driver
 
 The following options are supported in OpenStack NFS driver:
-
   ```
   nfs_mount_attempts = 3 
   (IntOpt) The number of attempts to mount nfs shares before raising an error. At least one attempt will be made to mount an nfs share, regardless of the value specified.
-    
+  
   nfs_mount_options = None
   (StrOpt) Mount options passed to the nfs client. See section of the nfs man page for details.
   
