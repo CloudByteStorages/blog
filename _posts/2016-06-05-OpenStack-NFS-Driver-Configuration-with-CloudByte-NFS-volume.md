@@ -45,7 +45,7 @@ The following options are supported in OpenStack NFS driver:
 - **nfs_oversub_ratio = 1.0**
   - (FloatOpt) This will compare the allocated to available space on the volume destination. If the ratio exceeds this number, the destination will no longer be valid.
 
-- **nfs_shares_config = /etc/cinder/<NFS_SHARE_INFO_FILE>**
+- **nfs_shares_config = /etc/cinder/NFS_SHARE_INFO_FILE**
   - (StrOpt) File with the list of available nfs shares
 
 - **nfs_sparsed_volumes = True**
