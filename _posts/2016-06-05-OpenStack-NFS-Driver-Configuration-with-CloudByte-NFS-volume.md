@@ -67,7 +67,7 @@ In order to configure the CloudByte NFS volume against OpenStack NFS driver we n
 
 After the creation and discovery of NFS volume is done proceed wit the following steps to use this volume with OpenStack NFS driver:
 
-- Create a file , lets say **/etc/cicnder/cb_nfs_shares**, and insert the NFS volume details
+- Create a file , lets say **/etc/cicnder/cb_nfs_shares**, and insert the NFS volume details.
   ```
   For eg : 172.16.19.20:/ACC1TEST
   ```
