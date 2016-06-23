@@ -30,7 +30,9 @@ contributor_emailid:  abhishek@cloudbyte.com
 - Despite possible IO performance loss, having volume data stored in a file might be beneficial. For example, backing up volumes can be as easy as copying the volume files.
 
 ### Options supported by OpenStack NFS driver
-  
+
+The following options are supported in OpenStack NFS driver:
+
   ```
   - nfs_mount_attempts = 3 
     (IntOpt) The number of attempts to mount nfs shares before raising an error. At least one attempt will be made to mount an nfs share, regardless of the value specified.
@@ -74,6 +76,7 @@ After the creation and discovery of NFS volume is done proceed wit the following
   ```
 - Now we need to add a new backend in **cinder.conf** that will point to OpenStack NFS driver.
 - It will also use the **cb_nfs_shares** to access the NFS volume form CloudByte.
+- 
   ```
   # vi /etc/cinder/cinder.conf
   
