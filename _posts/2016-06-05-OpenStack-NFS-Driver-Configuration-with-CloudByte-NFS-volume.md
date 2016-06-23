@@ -34,21 +34,28 @@ contributor_emailid:  abhishek@cloudbyte.com
 The following options are supported in OpenStack NFS driver:
   
 - nfs_mount_attempts = 3
-    (IntOpt) The number of attempts to mount nfs shares before raising an error. At least one attempt will be made to mount an nfs share, regardless of the value specified.
+  -(IntOpt) The number of attempts to mount nfs shares before raising an error. At least one attempt will be made to mount an nfs share, regardless of the value specified.
+
 - nfs_mount_options = None
-    (StrOpt) Mount options passed to the nfs client. See section of the nfs man page for details.
+  -(StrOpt) Mount options passed to the nfs client. See section of the nfs man page for details.
+
 - nfs_mount_point_base = $state_path/mnt
-    (StrOpt) Base dir containing mount points for nfs shares.
+  - (StrOpt) Base dir containing mount points for nfs shares.
+
 - nfs_oversub_ratio = 1.0
-  (FloatOpt) This will compare the allocated to available space on the volume destination. If the ratio exceeds this number, the destination will no longer be valid.
+  - (FloatOpt) This will compare the allocated to available space on the volume destination. If the ratio exceeds this number, the destination will no longer be valid.
+
 - nfs_shares_config = /etc/cinder/<NFS_SHARE_INFO_FILE>
-  (StrOpt) File with the list of available nfs shares
+  -(StrOpt) File with the list of available nfs shares
+
 - nfs_sparsed_volumes = True
-  (BoolOpt) Create volumes as sparsed files which take no space.If set to False volume is created as regular file.In such case volume creation takes a lot of time.
+  - (BoolOpt) Create volumes as sparsed files which take no space.If set to False volume is created as regular file.In such case volume creation takes a lot of time.
+
 - nfs_used_ratio = 0.95
-  (FloatOpt) Percent of ACTUAL usage of the underlying volume before no new volumes can be allocated to the volume destination.
+  - (FloatOpt) Percent of ACTUAL usage of the underlying volume before no new volumes can be allocated to the volume destination.
+
 - nfs_mount_options = vers = 3
-  (IntOpt) Version to be used for the NFS volume.
+  - (IntOpt) Version to be used for the NFS volume.
 
 # Configuration steps 
 
