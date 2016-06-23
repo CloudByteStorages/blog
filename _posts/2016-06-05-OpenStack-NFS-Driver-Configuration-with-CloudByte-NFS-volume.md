@@ -63,7 +63,7 @@ In order to configure the CloudByte NFS volume against OpenStack NFS driver we n
 
 - Firstly create a NFS volume in CloudByte ElastiStor with some good specifictions. For eg, 20 GB.
 - Set the **NFS client configuration** so that it can point to OpenStack setup machine.
-- Now go to the OpenStack setup and run the **showmount -e <VSM_IP>** command to see the NFS export list. (It should show the NFS volume we created)
+- Now go to the OpenStack setup and run the **showmount -e VSM_IP** command to see the NFS export list. (It should show the NFS volume we created)
 
 After the creation and discovery of NFS volume is done proceed wit the following steps to use this volume with OpenStack NFS driver:
 
