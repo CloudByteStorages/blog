@@ -76,7 +76,7 @@ After the creation and discovery of NFS volume is done proceed wit the following
   ```
 - Now we need to add a new backend in **cinder.conf** that will point to OpenStack NFS driver.
 - It will also use the **cb_nfs_shares** to access the NFS volume form CloudByte.
-- 
+ 
   ```
   # vi /etc/cinder/cinder.conf
   
