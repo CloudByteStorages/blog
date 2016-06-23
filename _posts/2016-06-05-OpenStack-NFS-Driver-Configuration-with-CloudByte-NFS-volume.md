@@ -34,6 +34,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 The following options are supported in OpenStack NFS driver:
 
   ```
+  
   - nfs_mount_attempts = 3 
     (IntOpt) The number of attempts to mount nfs shares before raising an error. At least one attempt will be made to mount an nfs share, regardless of the value specified.
     
@@ -57,8 +58,9 @@ The following options are supported in OpenStack NFS driver:
   
   - nfs_mount_options = vers = 3
     (IntOpt) Version to be used for the NFS volume.
+
   ```
-  
+
 # Configuration steps 
 
 In order to configure the CloudByte NFS volume against OpenStack NFS driver we need to create and discover the NFS volume from CloudByte first:
