@@ -158,8 +158,6 @@ contributor_emailid:  abhishek@cloudbyte.com
 - In order to run the tempest test suite on CloudByte cinder driver, we need to do some configuration to the file:
 
   ```
-  {% gist 5555251 %}
-  
   FILE:
   >> vi /opt/stack/tempest/etc/tempest.conf
 
