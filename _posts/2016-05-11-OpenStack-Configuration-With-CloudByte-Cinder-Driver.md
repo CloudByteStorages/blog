@@ -128,12 +128,15 @@ contributor_emailid:  abhishek@cloudbyte.com
   - Start the services again.
   ```
 
-- NOTE : "enabled_backends" property contains the backend name pointing to VSMs (Virtual Storage Machines) of ElastiCenter.
+- NOTE : **enabled_backends** property contains the backend name pointing to VSMs (Virtual Storage Machines) of ElastiCenter.
   - Its value can be more than one.
   - In other words it can point to one or more VSMs.
-- NOTE :  "default_volume_type" property contains the volume types
+- NOTE : **default_volume_type** property contains the volume types
   - Volume type are registered against a backend.
   - There can be more than one volume types, each corresponding to a backend.
+- NOTE : If using DevStack in order to update the cinder code with updated code use the following path
+  - PATH : **/opt/stack/cinder/cinder/volume/drivers/cloudbyte**
+  - Restart services c-api, c-sch and c-vol.
 
 - Create the volume type and assign them to backend
 
