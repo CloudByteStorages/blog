@@ -185,11 +185,13 @@ wget https://raw.githubusercontent.com/CloudByteStorages/CloudByte-CI-Modules/ma
 bash install_log_server.sh
 ```
 
-Bug: 
+Bug:
+
 ```
 err: /Stage[main]/Logging::Master/Exec[install_os-loganalyze]: Failed to call refresh: python setup.py install returned 1 instead of one of [0] at /home/stack/os-ext-testing/puppet/modules/logging/manifests/master.pp:89
 ```
 Workaround:
+
 ```
 cd /opt/os-loganalyze
 sudo python setup.py install
