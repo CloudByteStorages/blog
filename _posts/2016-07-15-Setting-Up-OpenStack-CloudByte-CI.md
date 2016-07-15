@@ -32,20 +32,14 @@ For setting up a CI follow the instructions:
 
 #### Registering an Upstream Gerrit Account
 
-    - You will need to register a Gerrit account with the upstream OpenStack
-    CI platform. 
-    - You can read the instructions for doing
-    [that](http://ci.openstack.org/third_party.html#requesting-a-service-account).
+- You will need to register a Gerrit account with the upstream OpenStack CI platform. 
+- You can read the instructions for doing [that](http://ci.openstack.org/third_party.html#requesting-a-service-account).
 
 #### Ensure Basic Packages on Hosts/VMs
 
-    - We will be installing a Jenkins master server and infrastructure on one
-    host or virtual machine and one or more Jenkins slave servers on hosts or VMs.
-    
-    - On each of these target nodes, you will want the base image to have the 
-    `wget`, `openssl`, `ssl-cert` and `ca-certificates` packages installed before
-    running anything in this repository.
+- We will be installing a Jenkins master server and infrastructure on one host or virtual machine and one or more Jenkins slave servers on hosts or VMs.
+- On each of these target nodes, you will want the base image to have the `wget`, `openssl`, `ssl-cert` and `ca-certificates` packages installed before running anything in this repository.
 
 #### Set Up Your Data Repository 
 
-    - For more info on this refer [CloudByte-CI-Data](https://github.com/CloudByteStorages/CloudByte-CI-Data).
+- For more info on this refer [CloudByte-CI-Data](https://github.com/CloudByteStorages/CloudByte-CI-Data).
