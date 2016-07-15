@@ -89,7 +89,7 @@ article{
 	margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1001px) {
 	.article_body{
 		margin-top: 20px;
 		margin-bottom: 20px;
