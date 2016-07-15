@@ -52,6 +52,7 @@ To know more about which modules which be used refer [CloudByte-CI-Modules](http
 #### Setting up the Jenkins Master
 
 - On the machine you will use as your Jenkins master, run the following:
+
 ```
 wget https://raw.github.com/CloudByteStorages/CloudByte-CI-Modules/master/puppet/install_master.sh
 bash install_master.sh
