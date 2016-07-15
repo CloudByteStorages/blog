@@ -4,7 +4,7 @@ title:      Setting up OpenStack CloudByte CI.
 subtitle:   "[ OPENSTACK CLOUDBYTE CI SETUP ]"
 categories: [general, setup, openstack, ci]
 tags:       [openstack, setup, ci]
-date:       2016-07-15 10:04:00 (UTC +5:30)
+date:       2016-07-14 10:04:00 (UTC +5:30)
 contributor_name:     Abhishek Shrivastava
 contributor_image:    "abhishek.jpg"
 contributor_linkedin: abhishek-shrivastava-03921390
