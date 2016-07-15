@@ -51,8 +51,6 @@ To know more about which modules which be used refer [CloudByte-CI-Modules](http
 
 #### Setting up the Jenkins Master
 
-##### Installation
-
 - On the machine you will use as your Jenkins master, run the following:
 ```
 wget https://raw.github.com/CloudByteStorages/CloudByte-CI-Modules/master/puppet/install_master.sh
@@ -65,7 +63,7 @@ bash install_master.sh
 
 Puppet will proceed to set up the Jenkins master.
 
-##### Manual setup of Jenkins scp 1.9 plugin
+#### Manual setup of Jenkins scp 1.9 plugin
 
 - Version 1.8 is publicly available, but does not have all features (e.g. copy console log file, copy files after failure, etc.).
 - Follow these steps to manually build and install the scp 1.9 plugin:
@@ -73,18 +71,18 @@ Puppet will proceed to set up the Jenkins master.
   * cd scp-plugin; mvn package
   * Jenkins Manage Plugins; Advanced; Upload Plugin  (target/scp.hpi from the maven build)
 
-##### Restart Jenkins to get the plugins fully installed
+#### Restart Jenkins to get the plugins fully installed
 
     sudo service jenkins restart
 
-##### Load Jenkins Up with Your Jobs
+#### Load Jenkins Up with Your Jobs
 
 - Run the following at the command line:
   ```
   sudo jenkins-jobs --flush-cache update /etc/jenkins_jobs/config
   ```
   
-##### Configuration
+#### Configuration
 - Start zuul
   ```
   sudo service zuul start
