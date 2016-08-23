@@ -21,7 +21,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Download the OVA template from 
 
-  ```http
+  ```link
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
@@ -39,7 +39,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - The deployment will take around 20-25 minutes to complete.
 
-- Once the deployement is done, the next steps will be the configuration of VDP.
+- Once the deployement is done, the next steps will involve the configuration of VDP.
 
 
 
