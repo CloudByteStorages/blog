@@ -21,10 +21,25 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Download the OVA template from 
 
-  ```
+  ```http
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
 - Deploy the OVA template on a VCenter.
 
-- 
+- While deploying select the Datastore (of size atleast 2TB), on top of which you want to deploy the VDP VM.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image1.jpg)
+
+  NOTE: In this case the Datastore seelcted is a CloudByte Volume mounted on the ESX host.
+
+- Now after couple of steps, use the following as the initial Network configuration for VDP VM.
+  
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image2.jpg)
+
+- The deployment will take around 20-25 minutes to complete.
+
+- Once the deployement is done, the next steps will be the configuration of VDP.
+
+
+
