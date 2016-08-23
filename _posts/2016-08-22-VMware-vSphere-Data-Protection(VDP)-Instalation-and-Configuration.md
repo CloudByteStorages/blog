@@ -21,7 +21,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Download the OVA template from 
 
-  ```link
+  ```
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
@@ -41,5 +41,53 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Once the deployement is done, the next steps will involve the configuration of VDP.
 
+## Configuring VMware vSphere Data Protection(VDP)
 
+- After the deployment is done and the VDP VM is powered on, the first step will be configuring the timezone.
 
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image3.PNG)
+
+- Once the above is done SSH into the system using **root** as username and **changeme** as the password. 
+
+- We will then need to update **/etc/hosts** to reflect the IP Address/Hostname of our VDP appliance as well as 
+  any others you may want VDP to be able to resolve. 
+
+- It should look something like this:
+  
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.PNG)
+
+- Now add the following highighted part in **/et/reslov.conf**:
+  
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image5.PNG)
+
+- Next we need to edit the dnsmasq configuration file located in **/etc/dnsmasq.conf** and add the following 
+  entry (replace it with the IP Address you have assigned your VDP appliance):
+
+  ```
+  server=20.10.112.131
+  ```
+- Finally we just need to start the dnsmasq service as well as enable it to automatically startup on boot by 
+  running the following two commands:
+
+  ```
+  /etc/init.d/dnsmasq start
+  chkconfig dnsmasq on
+  ```
+- To confirm that everything has been configured correctly, we will perform both a forward and reverse lookup of 
+  our VDP hostname and IP Address. You can do so by using "nslookup" command or any others such as dig or host. 
+  In this example, I will be using nslookup and you will need to run the following two commands (ensure to replace 
+  it with your hostname/IP Address):
+
+  ```
+  nslookup vdp.vmcert.com
+  nslookup 20.10.112.131
+  ```
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image6.PNG)
+
+- Once you have confirmed both forward and reverse lookups are successful, you can then proceed to configuring your 
+  VDP appliance by opening a browser to **https://[VDP-ADDRESS]:8543/vdp-configure** and proceed with moving forward 
+  with the VDP configuration wizard.
+  
+  ``` 
+  Note: Ensure that 127.0.0.1 is shown in the VDP configuration UI for the DNS entry. For hostname, you will need to use the short hostname even though a hostname is officially defined as specifying the FQDN
+  ```
