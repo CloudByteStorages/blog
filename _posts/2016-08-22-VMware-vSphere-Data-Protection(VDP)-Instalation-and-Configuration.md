@@ -29,13 +29,13 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - While deploying select the Datastore (of size atleast 2TB), on top of which you want to deploy the VDP VM.
 
-  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image1.jpg)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image1.PNG)
 
   NOTE: In this case the Datastore seelcted is a CloudByte Volume mounted on the ESX host.
 
 - Now after couple of steps, use the following as the initial Network configuration for VDP VM.
   
-  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image2.jpg)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image2.PNG)
 
 - The deployment will take around 20-25 minutes to complete.
 
