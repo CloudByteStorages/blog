@@ -54,7 +54,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - It should look something like this:
   
-  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.PNG)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.png)
 
 - Now add the following highighted part in **/et/reslov.conf**:
   
