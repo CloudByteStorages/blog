@@ -41,7 +41,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Once the deployement is done, the next steps will involve the configuration of VDP.
 
-## Configuring VMware vSphere Data Protection(VDP)
+## Configuration of VDP
 
 - After the deployment is done and the VDP VM is powered on, the first step will be configuring the timezone.
 
