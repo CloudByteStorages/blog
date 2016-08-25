@@ -106,7 +106,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   - Make sure your Primary DNS is **_127.0.0.1_**, if so proceed further.
   - Enter the Hostname and Domain you provided in **_/etc/hosts_**.
 
-![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
 
 - STEP 2: Setting Up Timezone
   - Select the timezone according to your region and then proceed further.
@@ -114,6 +114,6 @@ contributor_emailid:  abhishek@cloudbyte.com
 - STEP 3: Updating VDP Credentials
   - Update the VDP password with you credentials.
 
-![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image8.PNG)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image8.PNG)
 
 
