@@ -4,7 +4,7 @@ title:      VMware vSphere Data Protection(VDP) Installation and Configuration
 subtitle:   "[ VMWARE SETUP ]"
 categories: [general, setup, vmware, vdp]
 tags:       [vmware, setup]
-date:       2016-08-22 17:30:00 (UTC +5:30)
+date:       2016-08-24 12:30:00 (UTC +5:30)
 contributor_name:     Abhishek Shrivastava
 contributor_image:    "abhishek.jpg"
 contributor_linkedin: abhishek-shrivastava-03921390
@@ -101,12 +101,19 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ## Configuration of VDP - PART II
 
-- Now we will be proceeding with the configuration of VDP in web browser using the link mentioned in PART I.
-  - STEP 1: Network Settings
-    - By default your Stactic IP, Netmask, Gateway and Primary DNS will be present in the settings page.
-    - Make sure your Primary DNS is **_127.0.0.1_**, if so proceed further.
-    - Enter the Hostname and Domain you provided in **_/etc/hosts_**.
-    ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
-  - 
+- STEP 1: Network Settings
+  - By default your Stactic IP, Netmask, Gateway and Primary DNS will be present in the settings page.
+  - Make sure your Primary DNS is **_127.0.0.1_**, if so proceed further.
+  - Enter the Hostname and Domain you provided in **_/etc/hosts_**.
+
+![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
+
+- STEP 2: Setting Up Timezone
+  - Select the timezone according to your region and then proceed further.
+
+- STEP 3: Updating VDP Credentials
+  - Update the VDP password with you credentials.
+
+![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image8.PNG)
 
 
