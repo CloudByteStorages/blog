@@ -19,7 +19,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ## Prerequisites for VMware vSphere Data Protection(VDP)
 
-- Before installing VDP you need to make sure that your VMware Vcenter and the ESX hosts **_NTP servers_** are synced with the same DNS server,
+- Before installing VDP you need to make sure that your VMware Vcenter and the ESX hosts **NTP servers** are synced with the same DNS server,
   which is to be used by the VDP.
   
 ## Installing VMware vSphere Data Protection(VDP)
@@ -52,20 +52,20 @@ contributor_emailid:  abhishek@cloudbyte.com
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image3.PNG)
 
-- Once the above is done SSH into the system using **_root_** as username and **_changeme_** as the password. 
+- Once the above is done SSH into the system using **root** as username and **changeme** as the password. 
 
-- We will then need to update **_/etc/hosts_** to reflect the IP Address/Hostname of our VDP appliance as well as 
+- We will then need to update **/etc/hosts** to reflect the IP Address/Hostname of our VDP appliance as well as 
   any others you may want VDP to be able to resolve. 
 
 - It should look something like this:
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.PNG)
 
-- Now add the following highighted part in **_/etc/reslov.conf_**:
+- Now add the following highighted part in **/etc/reslov.conf**:
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image5.PNG)
 
-- Next we need to edit the dnsmasq configuration file located in **_/etc/dnsmasq.conf_** and add the following 
+- Next we need to edit the dnsmasq configuration file located in **/etc/dnsmasq.conf** and add the following 
   entry (replace it with the IP Address you have assigned your VDP appliance):
 
   ```
@@ -79,7 +79,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   chkconfig dnsmasq on
   ```
 - To confirm that everything has been configured correctly, we will perform both a forward and reverse lookup of 
-  our VDP hostname and IP Address. You can do so by using **_nslookup_** command or any others such as dig or host. 
+  our VDP hostname and IP Address. You can do so by using **nslookup** command or any others such as dig or host. 
   In this example, I will be using nslookup and you will need to run the following two commands (ensure to replace 
   it with your hostname/IP Address):
 
@@ -90,7 +90,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image6.PNG)
 
 - Once you have confirmed both forward and reverse lookups are successful, you can then proceed to configuring your 
-  VDP appliance by opening a browser to **_https://[VDP-ADDRESS]:8543/vdp-configure_** and proceed with moving forward 
+  VDP appliance by opening a browser to **https://[VDP-ADDRESS]:8543/vdp-configure** and proceed with moving forward 
   with the VDP configuration wizard.
   
   ``` 
@@ -101,17 +101,17 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ## Configuration of VDP - PART II
 
-- STEP 1: Network Settings
+- **STEP 1: Network Settings**
   - By default your Stactic IP, Netmask, Gateway and Primary DNS will be present in the settings page.
   - Make sure your Primary DNS is **_127.0.0.1_**, if so proceed further.
-  - Enter the Hostname and Domain you provided in **_/etc/hosts_**.
+  - Enter the Hostname and Domain you provided in **/etc/hosts**.
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
 
-- STEP 2: Setting Up Timezone
+- **STEP 2: Setting Up Timezone**
   - Select the timezone according to your region and then proceed further.
 
-- STEP 3: Updating VDP Credentials
+- **STEP 3: Updating VDP Credentials**
   - Update the VDP password with you credentials.
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image8.PNG)
