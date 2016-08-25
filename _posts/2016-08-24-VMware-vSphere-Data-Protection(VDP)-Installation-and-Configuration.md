@@ -116,4 +116,44 @@ contributor_emailid:  abhishek@cloudbyte.com
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image8.PNG)
 
+- **STEP 4: vCenter Registration**
+  - Enter your vCenter Credentials and do the Test Connection
 
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image9.PNG)
+
+  - Once the Test Connection is done you will get the following
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image10.PNG)
+
+- **STEP 5: Storage Creation**
+  - Select the first option and then click next.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image11.PNG)
+
+- **STEP 6: Device Allocation**
+  - Select the options as mentioned below and click next.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image12.PNG)
+
+- **STEP 7: CPU and Memory Configuration**
+  - You will get a default value, don't change it and proceed to next step.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image13.PNG)
+
+- **STEP 8: Ready To Complete**
+  - in this step just click next and you will get the following:
+  
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image14.PNG)
+
+  - On clicking **Yes** it will start configuring the setup and you will get something like below.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image15.PNG)
+
+- Once the above steps are done the VDP VM will be rebooted.
+
+## Verification 
+
+- To verify the installation is completed successfully, refersh the browser and enter the new password.
+- You will get the following after logging:
+
+![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image16.PNG)
