@@ -21,7 +21,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Download the OVA template from 
 
-  ```https
+  ```http
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
