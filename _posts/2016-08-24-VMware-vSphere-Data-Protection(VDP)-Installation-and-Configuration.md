@@ -19,7 +19,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 ## Prerequisites for VMware vSphere Data Protection(VDP)
 
-- Before installing VDP you need to make sure that your VMware Vcenter and the ESX hosts **NTP servers** are synced with the same DNS server,
+- Before installing VDP you need to make sure that your VMware vCenter and the ESX hosts **NTP servers** are synced with the same DNS server,
   which is to be used by the VDP.
   
 ## Installing VMware vSphere Data Protection(VDP)
@@ -30,7 +30,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
-- Deploy the OVA template on a VCenter.
+- Deploy the OVA template on a vCenter.
 
 - While deploying select the Datastore (of size atleast 2TB), on top of which you want to deploy the VDP VM.
 
@@ -157,3 +157,25 @@ contributor_emailid:  abhishek@cloudbyte.com
 - You will get the following after logging:
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image16.PNG)
+
+## Connecting VDP to VMware vCenter
+
+- In order to connect VDP to VMware vCenter follow the following steps:
+  - STEP 1 : Login to vCenter WEB-Console
+  - STEP 2 : Go to **vSphere Data Protection** tab and connect to the VDP VM you created.
+  
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image17.PNG)
+
+  - STEP 3 : While adding if you get the following error, then follow STEP 4.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image18.PNG)
+
+  - STEP 4 : Go to **/etc/hosts** and check if the below is present or not:
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.PNG)
+
+  If not add the same again to your **/etc/hosts** and then connect the VDP VM.
+
+  - After connecting you will be prompted to the final screen where ypu can run the operations provided in VDP.
+
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image19.PNG)
