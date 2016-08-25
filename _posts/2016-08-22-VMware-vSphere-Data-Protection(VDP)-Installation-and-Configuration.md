@@ -13,9 +13,14 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 # VMware vSphere Data Protection(VDP)
 
-  VMware vSphere Data Protection is a backup and recovery solution from VMware. It is fully integrated with VMware vCenter Server and
-  VMware vSphere Web Client, providing disk-based backup of virtual machines and applications. vSphere Data Protection is based on the
-  industry-leading EMC Avamar deduplication backup and recovery software.
+- VMware vSphere Data Protection is a backup and recovery solution from VMware. 
+- Fully integrated with VMware vCenter Server and VMware vSphere Web Client, providing disk-based backup of virtual machines and applications.
+- vSphere Data Protection is based on the industry-leading EMC Avamar deduplication backup and recovery software.
+
+## Prerequisites for VMware vSphere Data Protection(VDP)
+
+- Before installing VDP you need to make sure that your VMware Vcenter and the ESX hosts **_NTP servers_** are synced with the same DNS server,
+  which is to be used by the VDP.
   
 ## Installing VMware vSphere Data Protection(VDP)
 
@@ -41,7 +46,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Once the deployement is done, the next steps will involve the configuration of VDP.
 
-## Configuration of VDP
+## Configuration of VDP - PART I
 
 - After the deployment is done and the VDP VM is powered on, the first step will be configuring the timezone.
 
@@ -54,7 +59,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - It should look something like this:
   
-  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.png)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.PNG)
 
 - Now add the following highighted part in **_/etc/reslov.conf_**:
   
@@ -91,6 +96,17 @@ contributor_emailid:  abhishek@cloudbyte.com
   ``` 
   Note: 
   - Ensure that 127.0.0.1 is shown in the VDP configuration UI for the DNS entry. 
-  - For hostname, you will need to use the short hostname even though a hostname is 
-    officially defined as specifying the FQDN
+  - For hostname, you will need to use the short hostname even though a hostname is officially defined as specifying the FQDN
   ```
+
+## Configuration of VDP - PART II
+
+- Now we will be proceeding with the configuration of VDP in web browser using the link mentioned in PART I.
+  - STEP 1: Network Settings
+    - By default your Stactic IP, Netmask, Gateway and Primary DNS will be present in the settings page.
+    - Make sure your Primary DNS is **_127.0.0.1_**, if so proceed further.
+    - Enter the Hostname and Domain you provided in **_/etc/hosts_**.
+    ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image7.PNG)
+  - 
+
+
