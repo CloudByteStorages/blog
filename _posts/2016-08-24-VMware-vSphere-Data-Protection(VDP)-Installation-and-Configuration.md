@@ -156,4 +156,4 @@ contributor_emailid:  abhishek@cloudbyte.com
 - To verify the installation is completed successfully, refersh the browser and enter the new password.
 - You will get the following after logging:
 
-![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image16.PNG)
+  ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image16.PNG)
