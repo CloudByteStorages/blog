@@ -74,7 +74,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   chkconfig dnsmasq on
   ```
 - To confirm that everything has been configured correctly, we will perform both a forward and reverse lookup of 
-  our VDP hostname and IP Address. You can do so by using "nslookup" command or any others such as dig or host. 
+  our VDP hostname and IP Address. You can do so by using **_nslookup_** command or any others such as dig or host. 
   In this example, I will be using nslookup and you will need to run the following two commands (ensure to replace 
   it with your hostname/IP Address):
 
