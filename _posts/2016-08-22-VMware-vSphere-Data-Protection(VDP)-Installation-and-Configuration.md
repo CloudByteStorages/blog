@@ -91,5 +91,6 @@ contributor_emailid:  abhishek@cloudbyte.com
   ``` 
   Note: 
   - Ensure that 127.0.0.1 is shown in the VDP configuration UI for the DNS entry. 
-  - For hostname, you will need to use the short hostname even though a hostname is officially defined as specifying the FQDN
+  - For hostname, you will need to use the short hostname even though a hostname is 
+    officially defined as specifying the FQDN
   ```
