@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      VMware vSphere Data Protection(VDP) Instalation and Configuration
+title:      VMware vSphere Data Protection(VDP) Installation and Configuration
 subtitle:   "[ VMWARE SETUP ]"
 categories: [general, setup, vmware, vdp]
 tags:       [vmware, setup]
@@ -21,7 +21,7 @@ contributor_emailid:  abhishek@cloudbyte.com
 
 - Download the OVA template from 
 
-  ```
+  ```https
   https://my.vmware.com/web/vmware/details?downloadGroup=VDP61&productId=491
   ```
 
@@ -47,20 +47,20 @@ contributor_emailid:  abhishek@cloudbyte.com
 
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image3.PNG)
 
-- Once the above is done SSH into the system using **root** as username and **changeme** as the password. 
+- Once the above is done SSH into the system using **_root_** as username and **_changeme_** as the password. 
 
-- We will then need to update **/etc/hosts** to reflect the IP Address/Hostname of our VDP appliance as well as 
+- We will then need to update **_/etc/hosts_** to reflect the IP Address/Hostname of our VDP appliance as well as 
   any others you may want VDP to be able to resolve. 
 
 - It should look something like this:
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image4.png)
 
-- Now add the following highighted part in **/et/reslov.conf**:
+- Now add the following highighted part in **_/etc/reslov.conf_**:
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image5.PNG)
 
-- Next we need to edit the dnsmasq configuration file located in **/etc/dnsmasq.conf** and add the following 
+- Next we need to edit the dnsmasq configuration file located in **_/etc/dnsmasq.conf_** and add the following 
   entry (replace it with the IP Address you have assigned your VDP appliance):
 
   ```
@@ -85,7 +85,7 @@ contributor_emailid:  abhishek@cloudbyte.com
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/vdp_image6.PNG)
 
 - Once you have confirmed both forward and reverse lookups are successful, you can then proceed to configuring your 
-  VDP appliance by opening a browser to **https://[VDP-ADDRESS]:8543/vdp-configure** and proceed with moving forward 
+  VDP appliance by opening a browser to **_https://[VDP-ADDRESS]:8543/vdp-configure_** and proceed with moving forward 
   with the VDP configuration wizard.
   
   ``` 
