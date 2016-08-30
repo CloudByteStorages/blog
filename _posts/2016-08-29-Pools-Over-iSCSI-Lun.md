@@ -75,3 +75,7 @@ NOTE:
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/pool_over_iscsi6.png)
 
 - If the disk is shown as above then proceed with the creation of a POOL.
+
+## Advantages
+
+- Using this feature we can add multiple iSCSI Lun (in ElastiCenter) of some other Vendor's like Solidfire, Nexenta, etc.
