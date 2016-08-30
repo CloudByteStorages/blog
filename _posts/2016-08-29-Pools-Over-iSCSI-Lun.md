@@ -53,7 +53,7 @@ NOTE:
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/pool_over_iscsi2.png)
 
-- Fill the **Target IP Address** and **Authentication Method** you want to use.
+- Fill the **Target IP Address** (in this case **VSM IP Address**) and **Authentication Method** (Can be **CHAP or MUTUAL CHAP**) you want to use.
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/pool_over_iscsi3.png)
 
