@@ -190,3 +190,14 @@ footer {
     left: inherit;
     right: 0px;
 }
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: rgb(128, 128, 128);
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+}
