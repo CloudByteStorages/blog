@@ -33,11 +33,8 @@ contributor_emailid:  abhishek@cloudbyte.com
   In order to do so we have a bunch of steps that need to be performed on **ElastiCenter 2.0.0**.
   
   ```
-  NOTE
-  
-  1. The following steps are performed using two different ElasriCenter setup.
-  
-  2. The iSCSI Lun from one of the ElastiCenter is used as a Disk in another ElastiCenter to create POOL.
+  NOTE : The following steps are performed using two different ElasriCenter setup.
+       : The iSCSI Lun from one of the ElastiCenter is used as a Disk in another ElastiCenter to create POOL.
   ```
   
 ### Configuration Steps
