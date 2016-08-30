@@ -70,12 +70,12 @@ NOTE:
   
 **STEP 4**
 
-- Now go the the NODE, and check the newly added iSCSI Lun is showing in the **Shared Storage** section.
+- Now go the the NODE, and check the newly added iSCSI Lun in the **Shared Storage** section.
   
   ![alt text](https://raw.githubusercontent.com/CloudByteStorages/blog/gh-pages/post_images/pool_over_iscsi6.png)
 
 - If the disk is shown as above then proceed with the creation of a POOL.
 
-## Advantages
+## Why to use it ?
 
-- Using this feature we can add multiple iSCSI Lun (in ElastiCenter) of some other Vendor's like Solidfire, Nexenta, etc.
+- Using this feature we can add multiple iSCSI Lun of different Vendor's like Solidfire, Nexenta, etc; to the ElastiCenter and thus can use it as a Data Disk or for some other purposes too.
