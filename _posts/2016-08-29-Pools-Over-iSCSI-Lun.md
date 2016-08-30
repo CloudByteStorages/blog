@@ -34,11 +34,13 @@ contributor_emailid:  abhishek@cloudbyte.com
   
   ```
   NOTE
-  - The following steps are performed using two different ElasriCenter setup.
-  - The iSCSI Lun from one of the ElastiCenter is used as a Disk in another ElastiCenter to create POOL.
+  
+  1. The following steps are performed using two different ElasriCenter setup.
+  
+  2. The iSCSI Lun from one of the ElastiCenter is used as a Disk in another ElastiCenter to create POOL.
   ```
   
-## CONFIGURATION STEPS
+### Configuration Steps
   
   **STEP 1:**
   - In Elasticenter, got to **HA Groups** section and click on Tasks action tab.
