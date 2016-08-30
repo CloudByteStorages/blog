@@ -16,6 +16,17 @@ contributor_emailid:  abhishek@cloudbyte.com
 - VMware vSphere Data Protection is a backup and recovery solution from VMware. 
 - Fully integrated with VMware vCenter Server and VMware vSphere Web Client, providing disk-based backup of virtual machines and applications.
 - vSphere Data Protection is based on the industry-leading EMC Avamar deduplication backup and recovery software.
+ 
+## Softwares Used
+
+  Following softwares are used for the Setup purpose:
+  
+| SOFTWARE        | BUILD/VERSION NUMBER           | 
+| --------------- |:------------------------------:| 
+| vSPHERE ESX     |              6.0               | 
+| vSPHERE vCENTER |              6.0               | 
+| VDP             |              6.1               |
+| ELASTICENTER    |           1.3.0.920            |
 
 ## Prerequisites for VMware vSphere Data Protection(VDP)
 
