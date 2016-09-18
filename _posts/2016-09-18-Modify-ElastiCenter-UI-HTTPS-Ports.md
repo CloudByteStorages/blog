@@ -30,20 +30,21 @@ contributor_emailid:  abhishek@cloudbyte.com
   
   You will required to change the following lines:
   
-  ```
+```
     <Connector port="80" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="443" />
-  ```
   
-  ```
+  ...<snipped>
+  
         <Connector executor="tomcatThreadPool-internal" address="127.0.0.1"
                port="7080" protocol="org.apache.coyote.http11.Http11NioProtocol"
                connectionTimeout="20000" disableUploadTimeout="true"
                acceptCount="150" enableLookups="false" maxThreads="150"
                maxHttpHeaderSize="8192" redirectPort="443" />  
-  ```
-  ```
+
+...<snipped>
+
     <Connector port="443" protocol="HTTP/1.1" SSLEnabled="true"
                maxThreads="150" scheme="https" secure="true"
                clientAuth="false" sslProtocol="TLS"
@@ -65,19 +66,20 @@ contributor_emailid:  abhishek@cloudbyte.com
                         SSL_RSA_WITH_3DES_EDE_CBC_SHA"
                />
 
-   ```
-   ```   
+...<snipped>
+
     <Connector port="20400" protocol="AJP/1.3" redirectPort="443" />
-   ```
+
+```
 
 **STEP 3:**
    Restart ElastiCenter UI
    
-   ```
+```
    root@EC:~ # pgrep java
    2188
    root@EC:~ # kill -9 2188
    root@EC:~ # /usr/local/apache-tomcat-6.0.33/bin/startup.sh
    root@EC:~ #
-   ```
+```
 
